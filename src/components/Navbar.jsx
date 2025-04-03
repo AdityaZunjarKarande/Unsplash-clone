@@ -7,7 +7,6 @@ import logo from "../assets/logo.png";
 
 import SearchBar from "./SearchBar";
 import { fetchImages } from "../redux/unsplashSlice";
-import axios from "axios";
 
 const Navbar = () => {
   const dispatch = useDispatch();
@@ -52,7 +51,7 @@ const Navbar = () => {
         </div>
       </div>
 
-      <div className="w-full flex gap-6 text-sm font-medium overflow-x-auto whitespace-nowrap">
+      <div className="w-full flex gap-6 text-sm font-medium hidden-scrollbar overflow-x-auto whitespace-nowrap">
         <span className="cursor-pointer hover:text-black">Photos</span>
         <span className="cursor-pointer hover:text-black">Illustrations</span>
         <span className="cursor-pointer hover:text-black">Unsplash+</span>

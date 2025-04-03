@@ -11,10 +11,10 @@ const ImageGrid = () => {
   }, [dispatch]);
 
   if (loading) return <p className="text-center text-xl">Loading...</p>;
-  if (error) return <p className="text-center text-red-500">Error: {error}</p>;
+  if (error) return <p className="text-center text-red-500 text-lg">Error: {error}</p>;
 
   return (
-    <div className="columns-1 md:columns-2 xl:columns-3 gap-4 space-y-4 gap-4 p-4 ">
+    <div className="columns-1 md:columns-2 xl:columns-3 space-y-4 gap-4 p-4 ">
       {images.map((image) => (
         <div key={image.id} className="rounded-lg overflow-hidden shadow-lg">
           <img
